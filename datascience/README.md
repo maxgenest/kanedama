@@ -20,11 +20,9 @@ _You can assume that any account passed to your service will have at least 6 mon
 
 Set up a prediction function that takes an account, a list of transactions recorded on the account, and ouputs a prediction for the aggregated next month outgoing for that account.
 
-Outgoing is defined as the sum of all transactions with `< 0` amount over a certain time-period. So to get the monthly outgoing, you can sum the transactions over monthly periods.
+Outgoing is defined as the sum of all transactions with `< 0` amount over a certain time-period. So to get the monthly outgoing, you can sum the negative transactions over monthly periods.
 
 > **Tip 1.** It might make more sense to define a month as a 30 day period rather than the month itself since the snapshots can be taken at any point during the month and not necessarily at the end. 
-
-> **Tip 2.** By combining the transactions and accounts data you should be able to reverse the balance of the account back through time (back to the oldest transaction date for the account). This information might be useful as a feature of your predicting model.
 
 # Delivery
 
@@ -60,7 +58,9 @@ In the `data` folder, you will find two `csv` files containing anonymized data f
 - The `accounts.csv` contains a list of bank accounts, with the date of the last update of their financial data, and the balance on the account on the update date.
 - The `transactions.csv` contains all available transactions on the accounts up to the update date, with an amount (in EUR) and the date of the day they were recorded.
 
-> **Tip 3.** The available transaction history on each account is defined as the time elapsed since the oldest transaction recorded on this account and the **update date** of the account, not the date of the latest transaction on the account. If the date of the latest transaction on the account is older than the update date, that simply means that no transactions were recorded on the account after it up to the update date.
+> **Tip 2.** The available transaction history on each account is defined as the time elapsed since the oldest transaction recorded on this account and the **update date** of the account, not the date of the latest transaction on the account. If the date of the latest transaction on the account is older than the update date, that simply means that no transactions were recorded on the account after it up to the update date.
+
+> **Tip 3.** Be careful that the available transaction history on the accounts generally does not span the whole lifespan of the accounts all the way up to their opening date. The initial balance at the date of the oldest transaction provided on a given account is not provided in the data, and it cannot be assumed to be zero! Only the final balance at the end of the available transaction history (on the update date) is known and provided in the `accounts.csv`. However, by combining the transactions and accounts data, you should be able to reverse the balance of the account back through time (back to the oldest transaction date for the account). This information might be useful as a feature of your predicting model.
 
 # FastAPI 101
 
