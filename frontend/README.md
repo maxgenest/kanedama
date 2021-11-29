@@ -22,7 +22,7 @@ Global design to follow can be found below (feel free to improve and/or add your
 
 |                        User page                        |
 | :-----------------------------------------------------: |
-| ![Design Draft1](../.github/assets/frontend/draft1.png) |
+| ![Design wireframe](../.github/assets/frontend/frontend-wireframe.png) |
 
 ### Scope
 
