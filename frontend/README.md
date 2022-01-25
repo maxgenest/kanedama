@@ -18,7 +18,7 @@ Your mission, should you accept it, is to create a dashboard-like UI, where we c
 
 ### Design
 
-Global design to follow can be found below (feel free to improve and/or add your personnal touch)
+Global design to follow can be found below (feel free to improve and/or add your personnal touch - you won't be penalized if not)
 
 |                        User page                        |
 | :-----------------------------------------------------: |
