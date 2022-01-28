@@ -46,7 +46,7 @@ We have set up a pretty straightforward REST API with 3 endpoints:
 | **GET**  | /accounts/:account*id/transactions?from=\_start_date*&to=_end_date_ | Fetch the specified _account_id_ transactions from the _start_date_ to the _end_date_. Date are ISO 8601 UTC, so for example `2018-08-13T03:24:00` It can't return more than **365 days** of transactions. If there are no dates specified, the oldest transaction will be returned |
 | **POST** | /answer                                                             | Post your results in the body, the body needs to be of type `AnswerDto`. Every number needs to be rounded to the minimum. JSON content is expected                                                                                                                                  |
 
-**Root endpoint is: https://kata.getmansa.com/**
+**Root endpoint is: https://kata.getmansa.tech/**
 
 You can find the _Data Transfer Object_ (DTO) for all request objects, including bodies and responses in the `src/common/dtos` folder.
 
@@ -71,7 +71,7 @@ Here's the expected answer:
 Here the corresponding cURL command:
 
 ```bash
-curl -XPOST https://kata.getmansa.com/answer \
+curl -XPOST https://kata.getmansa.tech/answer \
 	-H 'Content-Type: application/json' \
 	--data-binary @- << EOF
 {

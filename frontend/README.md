@@ -89,6 +89,6 @@ For financial information, you'll use a custom API:
 | ------- | --------- | ------------------------------------------ |
 | **GET** | /accounts | Fetch all bank accounts from a _test user_ |
 
-**Root endpoint is: https://kata.getmansa.com/**
+**Root endpoint is: https://kata.getmansa.tech/**
 
 You can see our [Backend test README](../backend/README.md) if you want more information about this endpoint.

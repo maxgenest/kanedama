@@ -3,7 +3,7 @@ import { HttpStatus, INestApplication } from '@nestjs/common';
 import * as request from 'supertest';
 import { AppModule } from '../src/app/app.module';
 
-const API_HOST = process.env.API_HOST || 'https://kata.getmansa.com';
+const API_HOST = process.env.API_HOST || 'https://kata.getmansa.tech';
 
 describe('Kanedama', () => {
   let app: INestApplication;
