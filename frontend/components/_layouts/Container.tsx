@@ -2,7 +2,7 @@ import React, { ReactElement } from 'react';
 import styled from 'styled-components';
 
 interface IProps {
-  children: ReactElement;
+  children: JSX.Element|JSX.Element[];
   className?: string
 }
 

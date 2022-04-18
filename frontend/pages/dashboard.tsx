@@ -3,6 +3,7 @@ import { Container } from '@/components/_layouts/Container';
 import { NextPage } from 'next';
 import styled from 'styled-components';
 import { User } from '@/components/User';
+import { Company } from '@/components/Company';
 
 const Dashboard: NextPage = () => (
   <Wrapper>
@@ -10,6 +11,7 @@ const Dashboard: NextPage = () => (
 
     <StyledContainer>
       <User />
+      <Company />
     </StyledContainer>
   </Wrapper>
 );

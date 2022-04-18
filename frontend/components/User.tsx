@@ -1,15 +1,17 @@
 import React from 'react';
 import { useSwrUser } from 'services/userServices';
 import styled from 'styled-components';
+import { ErrorContainer } from './_layouts/ErrorContainer';
+import { LoadingContainer } from './_layouts/LoadingContainer';
 
 export const User: React.FC = () => {
   const { user, userLoading, userError } = useSwrUser();
 
   if (userLoading) {
-    return <div>loading</div>;
+    return <LoadingContainer />;
   }
   if (userError) {
-    return <div>error: {userError}</div>;
+    return <ErrorContainer error={userError} />;
   }
 
   return (
