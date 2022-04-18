@@ -1,25 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Container } from './_layouts/Container';
 
 export const Header: React.FC = () => (
   <HeaderWrapper>
-    <HeaderContainer>
+    <Container>
       <a href="/">
         <MansaLogo src={'/mansa.webp'} alt="logo Mansa" />
       </a>
-    </HeaderContainer>
+    </Container>
   </HeaderWrapper>
 );
 
 const HeaderWrapper = styled.header`
   background-color: ${({ theme }) => theme.colors.white};
   border-bottom: 1px solid ${({ theme }) => theme.colors.grey};
-`;
-const HeaderContainer = styled.div`
-  ${({ theme }) => theme.layouts.container};
-
-  padding-top: ${({ theme }) => theme.spacings.m};
-  padding-bottom: ${({ theme }) => theme.spacings.m};
 `;
 const MansaLogo = styled.img`
   max-width: 100px;
