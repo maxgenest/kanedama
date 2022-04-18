@@ -19,4 +19,4 @@ I decided to build this page row per row, and to build layouts components when I
 
 - use the picture in User Component instead of the initials
 - add tests
-- use "Assistant" font instead of png for the logo
+- use Assistant fonts for body

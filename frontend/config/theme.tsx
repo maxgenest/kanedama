@@ -12,8 +12,8 @@ declare module 'styled-components' {
 
 const fontSizes = {
   m: '16px',
-  l: '32px',
-}
+  l: '28px',
+};
 
 const spacings = {
   xxs: '4px',
@@ -32,6 +32,7 @@ const colors = {
   greyDark: '#183753',
   blueLight: '#f5f3fb',
   blue: '#6347d1',
+  red: '#ff0c39',
 };
 
 const deviceWidths = {

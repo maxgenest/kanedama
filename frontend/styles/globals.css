@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'Assistant';
+  src: url('/fonts/Assistant-Regular.ttf');
+}
+@font-face {
+  font-family: 'Assistant-SemiBold';
+  src: url('/fonts/Assistant-SemiBold.ttf');
+}
+
 html,
 body {
   padding: 0;
