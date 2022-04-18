@@ -16,6 +16,8 @@ const fontSizes = {
 }
 
 const spacings = {
+  xxs: '4px',
+  xs: '8px',
   s: '15px',
   ms: '20px',
   m: '30px',
@@ -28,6 +30,7 @@ const colors = {
   greyLight: '#f9f9f9',
   grey: '#F6F5Fc',
   greyDark: '#183753',
+  blueLight: '#f5f3fb',
   blue: '#6347d1',
 };
 

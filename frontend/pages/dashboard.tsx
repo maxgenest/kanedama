@@ -4,6 +4,7 @@ import { NextPage } from 'next';
 import styled from 'styled-components';
 import { User } from '@/components/User';
 import { Company } from '@/components/Company';
+import { AccountsList } from '@/components/AccountsList';
 
 const Dashboard: NextPage = () => (
   <Wrapper>
@@ -12,6 +13,7 @@ const Dashboard: NextPage = () => (
     <StyledContainer>
       <User />
       <Company />
+      <AccountsList />
     </StyledContainer>
   </Wrapper>
 );
