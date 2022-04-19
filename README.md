@@ -2,6 +2,8 @@
 
 This project has been created by Maxime Genestier
 
+The page is on `/dashboard`
+
 ## Design Choices
 
 I split the components into 2 kinds :
